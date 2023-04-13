@@ -8,7 +8,7 @@ const router = app => {
     app.use(route.get('/', home))
     app.use(route.get('/greet', greet))
     app.use(route.get('/js/:file', js))
-    app.use(route.get('/data/:path', data))
+    app.use(route.get('/data', data))
 }
 
 module.exports = router;
