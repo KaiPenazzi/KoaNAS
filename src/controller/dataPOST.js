@@ -3,9 +3,9 @@ const fs = require('fs');
 const dataPOST = ctx => {
     //var req = JSON.parse(ctx.request.body)
 
-    var req = ctx.request.body
+    var req = JSON.parse(ctx.request.body)
 
-    console.log(req.data.length)
+    //console.log(req.data.length)
     
     err = fs.writeFileSync('src/data/' + req.path + req.name, req.data)
 
