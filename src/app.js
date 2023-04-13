@@ -8,7 +8,8 @@ const app = new Koa();
 
 app.use(koaBody({
     formLimit: "50mb",
-    textLimit: "50mb"
+    textLimit: "50mb",
+    jsonLimit: "50mb"
 }))
 
 // registriere Routen
