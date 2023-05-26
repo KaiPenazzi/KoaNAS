@@ -10,6 +10,7 @@ const router = app => {
     app.use(route.get('/', home))
     app.use(route.get('/greet', greet))
     app.use(route.get('/js/:file', js))
+    
     app.use(route.get('/data', dataGET))
     app.use(route.post('/data', dataPOST))
 }
